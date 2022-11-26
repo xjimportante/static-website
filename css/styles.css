@@ -1,7 +1,14 @@
 body {
 	background-color: crimson;
 }
-h1,h2{
+h1,h2, p {
 	color: orange;
-	text-align: center;
+	font-family: sans-serif; 
+}
+#my-avatar {
+	width: 150px;
+	border-radius: 50%;
+}
+#content{
+text-align: center;
 }
