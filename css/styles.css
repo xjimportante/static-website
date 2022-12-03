@@ -1,13 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Dancing+Script&display=swap');
+/* CSS reset */
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
 body {
 	background-color: crimson;
 	font-family: 'Bree Serif', serif;
-}
-h1,h2, p {
-	color: orange;
-	font-family: sans-serif; 
-}
-#my-avatar {
+	color:#332FD0;
+	}
+#my-avatar{
 	width: 150px;
 	border-radius: 10%;
 }
@@ -16,4 +19,25 @@ text-align: center;
 }
 #my-name {
 	font-family: 'Dancing Script', cursive;
+	color:#000000;
+}
+#left-side {
+	width: 50%;
+	display: inline-block;
+}
+#right-side {
+	width: 49%;
+	display: inline-block;
+	text-align: right;
+}
+a {
+	color: #FF7000;
+	text-decoration: none;
+	border-bottom: 1px dotted #FF7000;
+}
+header {
+	margin-top: 8px;
+}
+.nav.link {
+	margin-left: 8px;
 }
