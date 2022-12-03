@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Dancing+Script&display=swap');
 body {
 	background-color: crimson;
+	font-family: 'Bree Serif', serif;
 }
 h1,h2, p {
 	color: orange;
@@ -7,8 +9,11 @@ h1,h2, p {
 }
 #my-avatar {
 	width: 150px;
-	border-radius: 50%;
+	border-radius: 10%;
 }
 #content{
 text-align: center;
+}
+#my-name {
+	font-family: 'Dancing Script', cursive;
 }
