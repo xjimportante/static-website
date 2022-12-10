@@ -56,4 +56,13 @@ footer a:first-child{
 	margin-right: 16px;
 }
 
+#content div {
+	background-color: red;
+	width: 60%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
 
