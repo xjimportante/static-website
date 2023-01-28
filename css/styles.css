@@ -46,16 +46,18 @@ a {
 	text-decoration: none;
 	border-bottom: 1px dotted #D8D9CF;
 }
-	bottom: 16px;
-	left: 50%;
+
 footer {
 	position: absolute;
+	bottom: 16px;
+	left: 50%;
 	transform: translateX(-50%);
 
 }
 footer a:first-child{
 	margin-right: 16px;
 }
+
 #content div {
 	width: 60%;
 	position: absolute;
@@ -68,8 +70,8 @@ footer a:first-child{
 
 #hero-banner {
 	background: linear-gradient(150deg, blueviolet, pink, red, blue);
-	padding-top: 16px;
-	padding-bottom: 16px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 #hero-banner > div {
 	width: 50%;
