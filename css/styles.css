@@ -16,6 +16,12 @@ body {
 	font-family: 'Bree Serif', serif;
 	color:#332FD0;
 	}
+	header {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		padding: 16px;
+	}
 #my-avatar{
 	width: 150px;
 	border-radius: 50%;
@@ -29,22 +35,21 @@ height: 100%;
 	color:#000000;
 }
 #left-side {
-	position: absolute;
-	top: 16px;
-	left: 16px;
+	display: flex;
+	flex-direction: row;
+	column-gap: 16px;
 }
 #left-side > a {
-	margin-right: 16px;
+/*	margin-right: 16px;*/
 }
 #right-side {
-	position: absolute;
+	/*position: absolute;
 	top: 16px;
-	right: 16px;
+	right: 16px;*/
 }
 a {
 	color: #D8D9CF;
 	text-decoration: none;
-	border-bottom: 1px dotted #D8D9CF;
 }
 
 footer {
@@ -80,7 +85,7 @@ footer a:first-child{
 #hero-banner > div >div {
 	display: inline-block;
 }
-#hero-banner h1
+#hero-banner h1,
 #hero-banner h2 {
 	color: white;
 }
