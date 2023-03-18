@@ -81,21 +81,27 @@ footer a:first-child{
 
 #hero-banner {
 	background: linear-gradient(150deg, blueviolet, pink, red, blue);
-	padding-top: 10px;
-	padding-bottom: 10px;
 }
 #hero-banner > div {
-	width: 50%;
-	margin: 0 auto;
+	width: 100vw;
+	display: flex;
+	column-gap: 16px;
+	padding: 16px;
 }
 #hero-banner > div >div {
 	display: inline-block;
 }
 #hero-banner h1,
 #hero-banner h2 {
-	color: white;
+	color: black;
 }
-h3{
+#hero-banner h1 {
+	font-size: 1.1em;
+}
+#hero-banner h2 {
+font-size: 1.1rem;
+}
+h3 {
 	text-align: center;
 	font-size: 32px;
 }
