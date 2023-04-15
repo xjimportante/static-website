@@ -3,32 +3,399 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Xenia Jane Importante - Project</title>
+	<title>Xenia Jane M. Importante - Junior Web Developer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="stylesheet" href="css/styles.css"/>
+	<style>
+		body {
+			height: auto;
+		}
+		
+		section.project > img {
+			width: 100%;
+			height: 250px;
+			object-fit: cover;
+		}
+         
+         p.description {
+         	padding: 16px;
+         }
+
+         ul.techs {
+         	list-style: none;
+         	text-align: center;
+         }
+         ul.techs::before {
+         	content: "Made with: ";
+         }
+         ul.techs > li {
+         	display: inline-block;
+         }
+         ul.techs > li:not(:last-child)::after {
+         	content: ", ";
+         }
+
+		footer {
+			position: initial;
+		}
+
+		section#hero-banner > div {
+			justify-content: center;
+		}
+
+		/*tablet device */
+		@media (min-width: 426px) and (max-width: 768px) {
+         section#projects {
+         	display: flex;
+         	flex-direction: row;
+         	flex-wrap: wrap;
+         	column-gap: 2%;
+         	row-gap: 16px;
+         }
+         section.project {
+         	width: 49%;
+         	
+          }
+		}
+		/* laptop device */
+		@media (min-width: 796px) {
+		 section#projects {
+         	display: flex;
+         	flex-direction: row;
+         	flex-wrap: wrap;
+         	column-gap: 2%;
+         	row-gap: 16px;	
+			 }
+
+		section.project {
+				width: 32%;
+			}
+			
+		}
+		/* large laptop device */
+		@media(min-width: 1025px) {
+		section#projects {
+         	display: flex;
+         	flex-direction: row;
+         	flex-wrap: wrap;
+         	column-gap: 2%;
+         	row-gap: 16px;	
+			}
+
+			section.project {
+				width: 23.5%;
+			}
+		}
+		/* 4k device */
+		@media (min-width: 2560px) {
+			section#projects {
+         	display: flex;
+         	flex-direction: row;
+         	flex-wrap: wrap;
+         	column-gap: 2%;
+         	row-gap: 16px;
+		}
+		section.project {
+			width: 18.4%;
+		}
+
+		section#projects {
+			width: 70%;
+			margin-left: 15%;
+			margin-right: 15%;
+		}
+
+	}
+	</style>
 </head>
 <body>
 	<header>
-		<nav id="left-side">
-		 <a class=".nav-link" href="./index.html">Home</a>
-		 <a class=".nav-link" href="projects.html">Projects</a>
-		</nav>
-		<nav id="right-side">
-			<a class=".nav-link" href="https://github.com/xjimportante">Github Profile</a>
-		</nav>
+			<nav id="left-side">
+				<a class="./index.html">
+					<i class="fa-solid fa-house"></i> Home
+				</a>
+				<a class="nav-link" href="./projects.html">
+					<i class="fa-solid fa-folder-tree"></i> Projects
+				</a>
+			</nav>
+			<nav id="right-side">
+				<a href="https://github.com/xjimportante">
+					<i class="fa-brands fa-github"></i> Github 
+				</a>
+			</nav>
 	</header>
 	<section id="hero-banner">
 		<div>
+			<section>
           <img
           id="my-avatar"
           src="./images/me.jpg">
+      </section>
+          <section>
           <h1 id="my-name">Xenia Jane Importante</h1>
           <h2>Junior Web Developer</h2>
+       </section>
       </div>
 	</section>
 	<h3>Projects</h3>
-	<footer>
-		<a href="https//www.linkedin.com/in/xeniajane">LinkedIn</a>
-		<a href="https://freecodecamp.org/Xeniajane">Free Code Camp</a>
-	</footer>
+	<!-- A collection of projects -->
+	<section id="projects">
+		<section class="project">
+			<img
+			src="https://images.unsplash.com/photo-1524386416438-98b9b2d4b433?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
+			alt="a placeholder image of a project">
+        <!-- 
+        1. snapshot of the projects
+        2. project me
+        3. technologies (list of web technology) used to create the project
+        4. short description about the project
+         -->
+     <h3>Project 1</h3>
+     <ul class="techs">
+     	<li>HTML</li>
+     	<li>CSS</li>
+     	<li>JavaScript</li>
+     </ul>
+     <p class="description">
+     	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+     	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+     	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+     	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+     	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+     	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+     </p>
+	 </section>	
+	 <section class="project">
+			<img
+			src="https://images.unsplash.com/photo-1524386416438-98b9b2d4b433?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
+			alt="a placeholder image of a project">
+        <!-- 
+        1. snapshot of the projects
+        2. project me
+        3. technologies (list of web technology) used to create the project
+        4. short description about the project
+         -->
+     <h3>Project 2</h3>
+     <ul  class="techs">
+     	<li>HTML</li>
+     	<li>CSS</li>
+     	<li>JavaScript</li>
+     </ul>
+     <p class="description">
+     	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+     	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+     	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+     	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+     	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+     	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+     </p>
+	 </section>	
+	 <section class="project">
+			<img
+			src="https://images.unsplash.com/photo-1524386416438-98b9b2d4b433?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
+			alt="a placeholder image of a project">
+        <!-- 
+        1. snapshot of the projects
+        2. project me
+        3. technologies (list of web technology) used to create the project
+        4. short description about the project
+         -->
+     <h3>Project 3</h3>
+     <ul  class="techs">
+     	<li>HTML</li>
+     	<li>CSS</li>
+     	<li>JavaScript</li>
+     </ul>
+     <p class="description">
+     	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+     	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+     	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+     	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+     	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+     	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+     </p>
+	 </section>	
+	 <section class="project">
+			<img
+			src="https://images.unsplash.com/photo-1524386416438-98b9b2d4b433?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
+			alt="a placeholder image of a project">
+        <!-- 
+        1. snapshot of the projects
+        2. project me
+        3. technologies (list of web technology) used to create the project
+        4. short description about the project
+         -->
+     <h3>Project 4</h3>
+     <ul class="techs">
+     	<li>HTML</li>
+     	<li>CSS</li>
+     	<li>JavaScript</li>
+     </ul>
+     <p class="description">
+     	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+     	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+     	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+     	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+     	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+     	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+     </p>
+	 </section>	
+	 <section class="project">
+			<img
+			src="https://images.unsplash.com/photo-1524386416438-98b9b2d4b433?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
+			alt="a placeholder image of a project">
+        <!-- 
+        1. snapshot of the projects
+        2. project me
+        3. technologies (list of web technology) used to create the project
+        4. short description about the project
+         -->
+     <h3>Project 5</h3>
+     <ul class="techs">
+     	<li>HTML</li>
+     	<li>CSS</li>
+     	<li>JavaScript</li>
+     </ul>
+     <p class="description">
+     	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+     	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+     	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+     	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+     	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+     	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+     </p>
+	 </section>	
+	  <section class="project">
+			<img
+			src="https://images.unsplash.com/photo-1524386416438-98b9b2d4b433?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
+			alt="a placeholder image of a project">
+        <!-- 
+        1. snapshot of the projects
+        2. project me
+        3. technologies (list of web technology) used to create the project
+        4. short description about the project
+         -->
+     <h3>Project 6</h3>
+     <ul class="techs">
+     	<li>HTML</li>
+     	<li>CSS</li>
+     	<li>JavaScript</li>
+     </ul>
+     <p class="description">
+     	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+     	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+     	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+     	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+     	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+     	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+     </p>
+	 </section>	
+	  <section class="project">
+			<img
+			src="https://images.unsplash.com/photo-1524386416438-98b9b2d4b433?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
+			alt="a placeholder image of a project">
+        <!-- 
+        1. snapshot of the projects
+        2. project me
+        3. technologies (list of web technology) used to create the project
+        4. short description about the project
+         -->
+     <h3>Project 7</h3>
+     <ul class="techs">
+     	<li>HTML</li>
+     	<li>CSS</li>
+     	<li>JavaScript</li>
+     </ul>
+     <p class="description">
+     	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+     	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+     	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+     	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+     	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+     	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+     </p>
+	 </section>	
+	  <section class="project">
+			<img
+			src="https://images.unsplash.com/photo-1524386416438-98b9b2d4b433?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
+			alt="a placeholder image of a project">
+        <!-- 
+        1. snapshot of the projects
+        2. project me
+        3. technologies (list of web technology) used to create the project
+        4. short description about the project
+         -->
+     <h3>Project 8</h3>
+     <ul class="techs">
+     	<li>HTML</li>
+     	<li>CSS</li>
+     	<li>JavaScript</li>
+     </ul>
+     <p class="description">
+     	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+     	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+     	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+     	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+     	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+     	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+     </p>
+	 </section>	
+	  <section class="project">
+			<img
+			src="https://images.unsplash.com/photo-1524386416438-98b9b2d4b433?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
+			alt="a placeholder image of a project">
+        <!-- 
+        1. snapshot of the projects
+        2. project me
+        3. technologies (list of web technology) used to create the project
+        4. short description about the project
+         -->
+     <h3>Project 9</h3>
+     <ul class="techs">
+     	<li>HTML</li>
+     	<li>CSS</li>
+     	<li>JavaScript</li>
+     </ul>
+     <p class="description">
+     	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+     	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+     	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+     	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+     	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+     	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+     </p>
+	 </section>
+	  <section class="project">
+			<img
+			src="https://images.unsplash.com/photo-1524386416438-98b9b2d4b433?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
+			alt="a placeholder image of a project">
+        <!-- 
+        1. snapshot of the projects
+        2. project me
+        3. technologies (list of web technology) used to create the project
+        4. short description about the project
+         -->
+     <h3>Project 10</h3>
+     <ul class="techs">
+     	<li>HTML</li>
+     	<li>CSS</li>
+     	<li>JavaScript</li>
+     </ul>
+     <p class="description">
+     	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+     	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+     	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+     	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+     	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+     	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+     </p>
+	 </section>		
+	</section>		
+	  <footer>
+		<section>
+		<a href="https://wwww.linkedin.com/in/xjimportante"><i class="fa-brands fa-linkedin"></i> LinkedIn </a>
+		<a href="https://freecodecamp.org"/xjimportante"><i class="fa-brands fa-free-code-camp"></i> Free Code Camp</a>
+	</section>
+	</footer> 
 </body>
 </html>
